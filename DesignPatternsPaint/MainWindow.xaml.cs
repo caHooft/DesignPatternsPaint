@@ -23,7 +23,7 @@ namespace DesignPatternsPaint
     {
         public MainWindow()
         {
-            //InitializeComponent();
+            InitializeComponent();
         }
         private void pnlMainGrid_MouseUp(object sender, MouseButtonEventArgs e)
         {
