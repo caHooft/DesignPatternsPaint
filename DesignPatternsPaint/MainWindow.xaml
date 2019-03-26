@@ -1,14 +1,53 @@
-﻿<Window x:Class="DesignPatternsPaint.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DesignPatternsPaint"
-        mc:Ignorable="d"
-         Title="MainWindow" Height="350" Width="525">
-    
-    <Grid Name="pnlMainGrid" MouseUp="pnlMainGrid_MouseUp" Background="LightBlue">
+﻿<Window x:Class="DesignPatternsPaint.MainWindow" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:local="clr-namespace:DesignPatternsPaint" 
+    mc:Ignorable="d" 
+    Title="MainWindow" 
+    WindowState="Maximized">
 
-    </Grid>
- 
+    <Canvas Name="grid" 
+        Background="GhostWhite" 
+        MouseDown="Grid_MouseDown" 
+        MouseMove="Grid_MouseMove" 
+        MouseUp="Grid_MouseUp">
+
+        <Button Name="sqBut" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="50" 
+            Margin="5,5,5,5" 
+            Content="Square" 
+            Click="Button_Click">
+        </Button>
+
+        <Button Name="cirBut" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="50" 
+            Margin="65,5,5,5" 
+            Content="Circle"
+            Click="Button_Click">
+        </Button>
+
+        <Button Name="triBut" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="50" 
+            Margin="125,5,5,5" 
+            Content="Triangle"
+            Click="Button_Click">
+        </Button>
+
+        <Button Name="txtBut" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="50" 
+            Margin="185,5,5,5" 
+            Content="Text"
+            Click="Button_Click">
+        </Button>
+    </Canvas>
 </Window>
