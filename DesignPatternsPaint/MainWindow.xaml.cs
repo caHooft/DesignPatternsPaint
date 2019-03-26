@@ -38,9 +38,11 @@ namespace DesignPatternsPaint
                     currentShape = new Circle();
                     break;
                 case "Triangle":
-                    currentShape = new Triangle();
+                    //currentShape = new Triangle();
+                    MessageBox.Show("Still in beta, sorry!");
                     break;
                 case "Text":
+                    currentShape = new Text();
                     break;
                 default:
                     break;
