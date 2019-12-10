@@ -1,36 +1,6 @@
-### C++ ###
-# Prerequisites
-*.d
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# Created by https://www.gitignore.io/api/csharp,visualstudio
+# Edit at https://www.gitignore.io/?templates=csharp,visualstudio
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -77,9 +47,10 @@ Generated\ Files/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
-# NUNIT
+# NUnit
 *.VisualState.xml
 TestResult.xml
+nunit-*.xml
 
 # Build Results of an ATL Project
 [Dd]ebugPS/
@@ -220,6 +191,8 @@ PublishScripts/
 
 # NuGet Packages
 *.nupkg
+# NuGet Symbol Packages
+*.snupkg
 # The packages folder can be ignored because of Package Restore
 **/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
@@ -295,7 +268,9 @@ ServiceFabricBackup/
 *.bim.layout
 *.bim_*.settings
 *.rptproj.rsuser
-*- Backup*.rdl
+*- [Bb]ackup.rdl
+*- [Bb]ackup ([0-9]).rdl
+*- [Bb]ackup ([0-9][0-9]).rdl
 
 # Microsoft Fakes
 FakesAssemblies/
@@ -378,161 +353,160 @@ healthchecksdb
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
 
-### Python ###
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+### VisualStudio ###
 
-# C extensions
-*.so
+# User-specific files
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+# User-specific files (MonoDevelop/Xamarin Studio)
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+# Mono auto generated files
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+# Build results
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
+# Visual Studio 2015/2017 cache/options directory
+# Uncomment if you have tasks that create the project's static files in wwwroot
 
-# Translations
-*.mo
-*.pot
+# Visual Studio 2017 auto generated files
 
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
+# MSTest test Results
 
-# Flask stuff:
-instance/
-.webassets-cache
+# NUnit
 
-# Scrapy stuff:
-.scrapy
+# Build Results of an ATL Project
 
-# Sphinx documentation
-docs/_build/
+# Benchmark Results
 
-# PyBuilder
-target/
+# .NET Core
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# StyleCop
 
-# IPython
-profile_default/
-ipython_config.py
+# Files built by Visual Studio
 
-# pyenv
-.python-version
+# Chutzpah Test files
 
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don’t work, or not
-#   install all needed dependencies.
-#Pipfile.lock
+# Visual C++ cache files
 
-# celery beat schedule file
-celerybeat-schedule
+# Visual Studio profiler
 
-# SageMath parsed files
-*.sage.py
+# Visual Studio Trace Files
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+# TFS 2012 Local Workspace
 
-# Spyder project settings
-.spyderproject
-.spyproject
+# Guidance Automation Toolkit
 
-# Rope project settings
-.ropeproject
+# ReSharper is a .NET coding add-in
 
-# mkdocs documentation
-/site
+# JustCode is a .NET coding add-in
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+# TeamCity is a build add-in
 
-# Pyre type checker
-.pyre/
+# DotCover is a Code Coverage Tool
 
-### Java ###
-# Compiled class file
-*.class
+# AxoCover is a Code Coverage Tool
 
-# Log file
-*.log
+# Visual Studio code coverage results
 
-# BlueJ files
-*.ctxt
+# NCrunch
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# MightyMoose
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+# Web workbench (sass)
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Installshield output folder
 
-### OpenCV ###
-#OpenCV for Mac and Linux
-#build and release folders
-*/CMakeFiles
-*/CMakeCache.txt
-*/Makefile
-*/cmake_install.cmake
-.DS_Store
+# DocProject is a documentation generator add-in
+
+# Click-Once directory
+
+# Publish Web Output
+# Note: Comment the next line if you want to checkin your web deploy settings,
+# but database connection strings (with potential passwords) will be unencrypted
+
+# Microsoft Azure Web App publish settings. Comment the next line if you want to
+# checkin your Azure Web App publish settings, but sensitive information contained
+# in these scripts will be unencrypted
+
+# NuGet Packages
+# NuGet Symbol Packages
+# The packages folder can be ignored because of Package Restore
+# except build/, which is used as an MSBuild target.
+# Uncomment if necessary however generally it will be regenerated when needed
+# NuGet v3's project.json files produces more ignorable files
+
+# Microsoft Azure Build Output
+
+# Microsoft Azure Emulator
+
+# Windows Store app package directories and files
+
+# Visual Studio cache files
+# files ending in .cache can be ignored
+# but keep track of directories ending in .cache
+
+# Others
+
+# Including strong name files can present a security risk
+# (https://github.com/github/gitignore/pull/2483#issue-259490424)
+
+# Since there are multiple workflows, uncomment next line to ignore bower_components
+# (https://github.com/github/gitignore/pull/1529#issuecomment-104372622)
+
+# RIA/Silverlight projects
+
+# Backup & report files from converting an old project file
+# to a newer Visual Studio version. Backup files are not needed,
+# because we have git ;-)
+
+# SQL Server files
+
+# Business Intelligence projects
+
+# Microsoft Fakes
+
+# GhostDoc plugin setting file
+
+# Node.js Tools for Visual Studio
+
+# Visual Studio 6 build log
+
+# Visual Studio 6 workspace options file
+
+# Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+
+# Visual Studio LightSwitch build output
+
+# Paket dependency manager
+
+# FAKE - F# Make
+
+# CodeRush personal settings
+
+# Python Tools for Visual Studio (PTVS)
+
+# Cake - Uncomment if you are using it
+# tools/**
+# !tools/packages.config
+
+# Tabs Studio
+
+# Telerik's JustMock configuration file
+
+# BizTalk build output
+
+# OpenCover UI analysis results
+
+# Azure Stream Analytics local run output
+
+# MSBuild Binary and Structured Log
+
+# NVidia Nsight GPU debugger configuration file
+
+# MFractors (Xamarin productivity tool) working folder
+
+# Local History for Visual Studio
+
+# BeatPulse healthcheck temp database
+
+# Backup folder for Package Reference Convert tool in Visual Studio 2017
+
+# End of https://www.gitignore.io/api/csharp,visualstudio
